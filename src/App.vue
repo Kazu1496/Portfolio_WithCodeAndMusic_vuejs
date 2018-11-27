@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <AppHeader/>
+    <PageTop/>
+    <PageAbout/>
+    <PagePortfolio/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import AppHeader from './components/AppHeader'
+import PageTop from './components/PageTop'
+import PageAbout from './components/PageAbout'
+import PagePortfolio from './components/PagePortfolio'
+import AppFooter from './components/AppFooter'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppHeader,
+    PageTop,
+    PageAbout,
+    PagePortfolio,
+    AppFooter
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+html, body, p {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
