@@ -70,12 +70,6 @@ export default {
         a{
           text-decoration: none;
           color: #888;
-          border-bottom: 2px solid #FFF;
-          transition: border-bottom 0.3s;
-          &:hover{
-            border-bottom: 2px solid #90201f;
-            transition: border-bottom 0.3s;
-          }
         }
       }
     }

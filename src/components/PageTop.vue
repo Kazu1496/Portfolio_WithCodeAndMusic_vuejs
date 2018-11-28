@@ -126,6 +126,7 @@ export default {
       width: 100%;
       background-color: #90201f;
       z-index: 10;
+      transform: scale(0);
       animation: first_bg_moving_sp 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     }
     .main_content{

@@ -187,7 +187,7 @@ export default {
               }
             }
             &:hover{
-              box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+              box-shadow: 2px 15px 15px rgba(0,0,0,0.2);
             }
           }
         }
@@ -254,7 +254,6 @@ export default {
           border-radius: 10px;
           margin: 20px;
           padding: 20px;
-          transition: box-shadow 0.5s;
           @for $i from 1 through 4{
             a{
               text-decoration: none;
@@ -283,9 +282,6 @@ export default {
                 margin: 0;
                 padding: 5px 10px;
               }
-            }
-            &:hover{
-              box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
             }
           }
         }
