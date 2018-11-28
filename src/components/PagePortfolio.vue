@@ -35,7 +35,7 @@
             </p>
             <p class="work-tag">HTML5</p>
             <p class="work-tag">CSS3</p>
-            <p class="work-tag">JavaScript (jQuery)</p>
+            <p class="work-tag">JavaScript</p>
           </a>
         </div>
         <div class="portfolio_card">
