@@ -21,9 +21,21 @@
             <div class="item_image image2"></div>
             <h3>With Code and Music</h3>
             <p class="item_description">
-              エンジニア/アーティストポートフォリオサイト。Vue.js / CSS Animationの学習も兼ねた開発
+              自身のエンジニアとしての活動をまとめたポートフォリオサイト。Vue.js / CSS animationの学習も兼ねて開発。
             </p>
             <p class="work-tag">Vue.js</p>
+          </a>
+        </div>
+        <div class="portfolio_card">
+          <a href="https://kurenai-works.com/" target="_blank">
+            <div class="item_image image3"></div>
+            <h3>kurenai-works</h3>
+            <p class="item_description">
+              初めて０制作した自身のアーティストとしての活動をまとめたポートフォリオサイト。HTML / CSS / JavaScript(jQuery)の学習も兼ねて開発。※閉鎖中<br>
+            </p>
+            <p class="work-tag">HTML5</p>
+            <p class="work-tag">CSS3</p>
+            <p class="work-tag">JavaScript (jQuery)</p>
           </a>
         </div>
         <div class="portfolio_card">
