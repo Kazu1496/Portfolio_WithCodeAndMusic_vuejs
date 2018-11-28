@@ -19,7 +19,7 @@
                 業務では主にRubyOnRails/jQueryを用いたフロントエンド開発を担当しており、趣味でVue.js/ReactNativeなどに触れている。
               </div>
               <div class="skills">
-                <p>Skills</p><br>
+                <p class="item_title">Skills</p>
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js"></i>
@@ -27,8 +27,8 @@
                 <!-- <i class="fab fa-vuejs"></i> -->
               </div>
               <div class="contact">
-                <p>Contact</p><br>
-                ishikura.kazumasa@gmail.com
+                <p class="item_title">Contact</p>
+                <p>ishikura.kazumasa@gmail.com</p>
               </div>
             </dd>
           </dl>
@@ -118,23 +118,21 @@ export default {
               .description{
                 margin-bottom: 30px;
               }
+              .item_title{
+                font-size: 23px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
               .skills{
-                p{
-                  font-size: 20px;
-                  font-weight: bold;
-                }
                 i{
                   font-size: 30px;
-                  margin: 10px 20px 0 0;
+                  text-align: left;
+                  margin-right: 20px;
                 }
               }
               .contact{
                 width: 280px;
                 margin-top: 30px;
-                p{
-                  font-size: 20px;
-                  font-weight: bold;
-                }
               }
             }
           }
@@ -210,25 +208,23 @@ export default {
                 font-size: 13px;
                 margin: 0 auto 30px;
               }
+              .item_title{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
               .skills{
                 width: 280px;
-                font-size: 20px;
-                letter-spacing: 5px;
-                margin: 0 auto;
+                margin: 0 auto 20px;
                 i{
                   font-size: 30px;
-                  margin: 10px 10px 0;
+                  margin: 0 10px;
                 }
               }
               .contact{
                 width: 280px;
-                font-size: 20px;
-                letter-spacing: 5px;
-                margin: 0 auto;
-                p{
-                  font-size: 20px;
-                  font-weight: bold;
-                }
+                font-size: 15px;
+                margin: 20px auto 0;
               }
             }
           }
