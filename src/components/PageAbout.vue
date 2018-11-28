@@ -19,12 +19,16 @@
                 業務では主にRubyOnRails/jQueryを用いたフロントエンド開発を担当しており、趣味でVue.js/ReactNativeなどに触れている。
               </div>
               <div class="skills">
-                <strong>Skills</strong><br>
+                <p>Skills</p><br>
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js"></i>
                 <i class="fas fa-gem"></i>
                 <!-- <i class="fab fa-vuejs"></i> -->
+              </div>
+              <div class="contact">
+                <p>Contact</p><br>
+                ishikura.kazumasa@gmail.com
               </div>
             </dd>
           </dl>
@@ -115,10 +119,21 @@ export default {
                 margin-bottom: 30px;
               }
               .skills{
-                font-size: 20px;
+                p{
+                  font-size: 20px;
+                  font-weight: bold;
+                }
                 i{
                   font-size: 30px;
                   margin: 10px 20px 0 0;
+                }
+              }
+              .contact{
+                width: 280px;
+                margin-top: 30px;
+                p{
+                  font-size: 20px;
+                  font-weight: bold;
                 }
               }
             }
@@ -203,6 +218,16 @@ export default {
                 i{
                   font-size: 30px;
                   margin: 10px 10px 0;
+                }
+              }
+              .contact{
+                width: 280px;
+                font-size: 20px;
+                letter-spacing: 5px;
+                margin: 0 auto;
+                p{
+                  font-size: 20px;
+                  font-weight: bold;
                 }
               }
             }
