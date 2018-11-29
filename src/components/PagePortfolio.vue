@@ -27,7 +27,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="https://kurenai-works.com/" target="_blank">
+          <a href="javascript:void(0)" target="_blank">
             <div class="item_image image3"></div>
             <h3>kurenai-works</h3>
             <p class="item_description">

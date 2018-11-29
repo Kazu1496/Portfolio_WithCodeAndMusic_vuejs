@@ -15,7 +15,7 @@
               <div class="description">
                 <span>Birthday 1997 / 05 / 30</span>
                 フロントエンドエンジニア、ギタリストとして活動している食をこよなく愛する大学生<br><br>
-                大学3年になったとき、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思い、プラグラミングに対する興味が湧き、独学でHTML/CSS/JavaScriptを身につける。<br><br>
+                大学3年になったとき、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思い、プログラミングに対する興味が湧き、独学でHTML/CSS/JavaScriptを身につける。<br><br>
                 業務では主にRubyOnRails/jQueryを用いたフロントエンド開発を担当しており、趣味でVue.js/ReactNativeなどに触れている。
               </div>
               <div class="skills">
