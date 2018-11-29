@@ -24,7 +24,7 @@
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js"></i>
                 <i class="fas fa-gem"></i>
-                <i class="fab fa-vuejs"></i>
+                <!-- <i class="fab fa-vuejs"></i> -->
                 <i class="fab fa-github-square"></i>
               </div>
               <div class="contact">
