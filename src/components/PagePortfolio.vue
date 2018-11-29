@@ -17,7 +17,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="https://kurenai-works.com/" target="_blank">
+          <a href="javascript:void(0)" target="_blank">
             <div class="item_image image2"></div>
             <h3>With Code and Music</h3>
             <p class="item_description">
@@ -282,7 +282,7 @@ export default {
                 margin: 10px 0 0;
               }
               .item_description{
-                font-size: 12px;
+                font-size: 11px;
                 margin: 5px 0;
               }
               .work-tag{
