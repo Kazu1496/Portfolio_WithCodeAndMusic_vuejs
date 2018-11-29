@@ -177,7 +177,7 @@ export default {
               text-decoration: none;
               color: #222;
               .image#{$i}{
-                height: 200px;
+                height: 190px;
                 background: url("../assets/item_image#{$i}.jpg") no-repeat center;
                 background-size: cover;
                 border: 1px solid #CCC;
