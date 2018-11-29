@@ -1,9 +1,16 @@
 <template>
   <div id="app">
     <AppHeader/>
+    <router-link to ="/">
+      engineer
+    </router-link>
+    <router-link to ="/artist">
+      artist
+    </router-link>
     <PageTop/>
     <PageAbout/>
     <PagePortfolio/>
+    <router-view></router-view>
     <AppFooter/>
   </div>
 </template>
