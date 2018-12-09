@@ -67,14 +67,14 @@ window.onload = () => {
   remove_bg.setAttribute('style', 'display: none');
   if (body.clientWidth > 768) {
     animation_bg.classList.add('class', 'moving-animation-pc');
-    setTimeout(() => {
+    animation_bg.addEventListener('animationend', () => {
       animation_bg.setAttribute('style','left: 90%');
-    }, 3000)
+    });
   } else {
     animation_bg.classList.add('class', 'moving-animation-sp');
-    setTimeout(() => {
+    animation_bg.addEventListener('animationend', () => {
       animation_bg.setAttribute('style','display: none');
-    }, 3000)
+    });
   }
 }
 </script>
@@ -88,7 +88,6 @@ window.onload = () => {
     .remove_bg{
       position: absolute;
       top: 0;
-      left: 0;
       height: calc(100vh + 10px);
       width: 100%;
       background-color: #90201f;
