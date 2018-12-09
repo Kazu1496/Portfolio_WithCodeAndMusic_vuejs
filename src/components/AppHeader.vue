@@ -1,8 +1,8 @@
 <template>
   <header>
     <ul>
-      <li>
-        <!-- <transition name="fade">
+      <!-- <li>
+        <transition name="fade">
           <router-link
             to="/artist"
             v-if="type == 'Engineer'"
@@ -19,8 +19,8 @@
             >
             {{ type }}
           </router-link>
-        </transition> -->
-      </li>
+        </transition>
+      </li> -->
       <li>
         <a href="javascript:void(0)" v-scroll-to="'#about_content'">About</a>
       </li>

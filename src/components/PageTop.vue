@@ -58,11 +58,11 @@ export default {
     }
   }
 }
-// ページロード完了時にアニメーション発火
 window.onload = () => {
-  var remove_bg = document.getElementsByClassName('remove_bg')[0];
-  var animation_bg = document.getElementsByClassName('first_bg_color')[0];
-  var body = document.getElementsByTagName('body')[0];
+  // ページロード完了時にアニメーション発火
+  const remove_bg = document.getElementsByClassName('remove_bg')[0];
+  const animation_bg = document.getElementsByClassName('first_bg_color')[0];
+  const body = document.getElementsByTagName('body')[0];
 
   remove_bg.setAttribute('style', 'display: none');
   if (body.clientWidth > 768) {
