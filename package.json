@@ -14,7 +14,8 @@
     "aos": "^3.0.0-beta.6",
     "style-loader": "^0.23.1",
     "vue": "^2.5.2",
-    "vue-scrollto": "^2.13.0"
+    "vue-scrollto": "^2.13.0",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

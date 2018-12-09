@@ -2,32 +2,29 @@
   <div id="app">
     <AppHeader/>
     <PageTop/>
-    <PageAbout/>
-    <PagePortfolio/>
-    <AppFooter/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader'
 import PageTop from './components/PageTop'
-import PageAbout from './components/PageAbout'
-import PagePortfolio from './components/PagePortfolio'
-import AppFooter from './components/AppFooter'
-
 export default {
   name: 'App',
   components: {
     AppHeader,
-    PageTop,
-    PageAbout,
-    PagePortfolio,
-    AppFooter
+    PageTop
   }
 }
 </script>
 
 <style lang="scss">
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 html, body, p {
   margin: 0;
   overflow-x: hidden;

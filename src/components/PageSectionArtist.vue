@@ -3,49 +3,51 @@
     <div class="second_bg_color">
       <section id="about_content">
         <div class="section-title">
-          <h2>ABOUT US</h2>
+          <h2 class="is-fadeIn">About Me</h2>
         </div>
         <div class="profile_container">
-          <img src="../assets/profile_image.jpg" class="profile_image" size="150x150">
+          <img src="../assets/profile_image2.jpg" class="profile_image" size="150x150">
           <dl>
             <dt>
-              Kazumasa Ishikura
+              K Ishikura a.k.a. Kurenai
             </dt>
             <dd>
               <div class="description">
                 <span>Birthday 1997 / 05 / 30</span>
-                フロントエンドエンジニア、ギタリストとして活動している食をこよなく愛する大学生<br><br>
-                大学3年になったとき、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思い、プログラミングに対する興味が湧き、独学でHTML/CSS/JavaScriptを身につける。<br><br>
-                業務では主にRubyOnRails/jQueryを用いたフロントエンド開発を担当しており、趣味でVue.js/ReactNativeなどに触れている。
-              </div>
-              <div class="skills">
-                <p class="item_title">Skills</p>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fas fa-gem"></i>
-                <!-- <i class="fab fa-vuejs"></i> -->
-                <i class="fab fa-github-square"></i>
+                12歳の時にバンド活動していた兄の影響でギターを始める。<br><br>
+                15歳の時、よりギタースキルを効率よく身につけられないかと試行錯誤した結果、動画投稿サイトに自身の演奏動画を公開するという考えに辿りつき、実際に動画投稿し始める。<br><br>
+                18歳の頃から様々な世界規模のギターコンテストに参加するようになり、入賞やグランプリ、さらには世界トップ３０のギタリストに選ばれるなど、数々の賞を頂く。またこの頃から本格的にギタリスト作編曲家として活動を始める。<br><br>
+                "次世代ギタリスト集団「WhileTrue:」"のメンバーとしても活動している。
               </div>
               <div class="contact">
                 <p class="item_title">Contact</p>
-                <p>ishikura.kazumasa@gmail.com</p>
+                <a href="mailto:ishikura.kazumasa@gmail.com">nico.kurenai@gmail.com</a>
               </div>
             </dd>
           </dl>
         </div>
       </section>
     </div>
+
+    <PageSectionAwards/>
+    <PageSectionMovies/>
+    <PageSectionArtistWorks/>
+    <AppFooter/>
   </main>
 </template>
 
 <script>
+import AppFooter from './AppFooter'
+import PageSectionAwards from './PageSectionAwards'
+import PageSectionMovies from './PageSectionMovies'
+import PageSectionArtistWorks from './PageSectionArtistWorks'
 export default {
   name: 'PageTop',
-  data () {
-    return {
-      active: true
-    }
+  components: {
+    AppFooter,
+    PageSectionAwards,
+    PageSectionMovies,
+    PageSectionArtistWorks
   }
 }
 </script>
@@ -134,9 +136,24 @@ export default {
               .contact{
                 width: 280px;
                 margin-top: 30px;
+                a{
+                  color: #FFF;
+                  text-decoration: none;
+                  &:hover{
+                    opacity: 0.7;
+                  }
+                }
               }
             }
           }
+        }
+      }
+    }
+    #portfolio_content{
+      text-align: center;
+      .section-title{
+        .is-fadeIn::after{
+          background-color: #000;
         }
       }
     }
@@ -226,6 +243,10 @@ export default {
                 width: 280px;
                 font-size: 15px;
                 margin: 20px auto 0;
+                a{
+                  color: #FFF;
+                  text-decoration: none;
+                }
               }
             }
           }

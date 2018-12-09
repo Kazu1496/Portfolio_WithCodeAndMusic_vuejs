@@ -1,11 +1,46 @@
 <template>
   <main>
+    <div class="second_bg_color">
+      <section id="about_content">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+        <div class="profile_container">
+          <img src="../assets/profile_image.jpg" class="profile_image" size="150x150">
+          <dl>
+            <dt>
+              Kazumasa Ishikura
+            </dt>
+            <dd>
+              <div class="description">
+                <span>Birthday 1997 / 05 / 30</span>
+                フロントエンドエンジニア、ギタリストとして活動している食をこよなく愛する大学生<br><br>
+                大学3年になったとき、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思い、プログラミングに対する興味が湧き、独学でHTML/CSS/JavaScriptを身につける。<br><br>
+                業務では主にRubyOnRails/jQueryを用いたフロントエンド開発を担当しており、趣味でVue.js/ReactNativeなどに触れている。
+              </div>
+              <div class="skills">
+                <p class="item_title">Skills</p>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fas fa-gem"></i>
+                <i class="fab fa-vuejs"></i>
+                <i class="fab fa-github-square"></i>
+              </div>
+              <div class="contact">
+                <p class="item_title">Contact</p>
+                <a href="mailto:ishikura.kazumasa@gmail.com">ishikura.kazumasa@gmail.com</a>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </section>
+    </div>
     <section id="portfolio_content">
       <div class="section-title">
-        <h2>WORKS</h2>
+        <h2>Works</h2>
       </div>
-      <!-- <input type="submit" @click="toggleType"> -->
-      <div class="portfolio_container" v-if="active">
+      <div class="portfolio_container">
         <div class="portfolio_card">
           <a href="https://qiitadeck.com/" target="_blank">
             <div class="item_image image1"></div>
@@ -48,71 +83,17 @@
           </a>
         </div>
       </div>
-      <!-- <div class="portfolio_container" v-else>
-        <div class="portfolio_card">
-          <a href="https://qiitadeck.com/" target="_blank">
-            <div class="item_image image1"></div>
-            <h3>QiitaDeck</h3>
-            <p class="item_description">
-              "もっとQiitaで情報収集しやすく！"をコンセプトに「気になる人、気になるタグ、今のトレンド」をリアルタイムウォッチできるWebサービス<br>
-            </p>
-            <p class="work-tag">Ruby on Rails</p>
-          </a>
-        </div>
-        <div class="portfolio_card">
-          <a href="https://kurenai-works.com/" target="_blank">
-            <div class="item_image image2"></div>
-            <h3>With Code and Music</h3>
-            <p class="item_description">
-              エンジニア/アーティストポートフォリオサイト<br>
-              Vue.js / CSS Animationの学習も兼ねた開発
-            </p>
-            <p class="work-tag">Vue.js</p>
-          </a>
-        </div> -->
-        <!-- <div class="portfolio_card">
-          <a href="https://kurenai-works.com/" target="_blank">
-            <div class="item_image image3"></div>
-            <h3>kurenai-works</h3>
-            <p class="item_description">
-              ０からHTML/CSS/JavaScriptを使って初めて作ったサイト<br>
-            </p>
-            <p class="work-tag">HTML5</p>
-            <p class="work-tag">CSS3</p>
-          </a>
-        </div> -->
-        <!-- <div class="portfolio_card">
-          <a href="https://github.com/Kazu1496" target="_blank">
-            <div class="item_image image4"></div>
-            <h3>More GitHub</h3>
-            <p class="item_description">
-              過去・現在進行系で進んでいるプロジェクト、作品をオープンソースで公開しています<br>
-            </p>
-          </a>
-        </div> -->
-      </div>
     </section>
+    <AppFooter/>
   </main>
 </template>
 
 <script>
+import AppFooter from './AppFooter'
 export default {
   name: 'PageTop',
-  data () {
-    return {
-      active: true,
-      type: 'Engineer'
-    }
-  },
-  methods: {
-    toggleType: function () {
-      this.active = !this.active
-      if (this.type == 'Engineer') {
-        this.type = 'Musician'
-      } else {
-        this.type = 'Engineer'
-      }
-    }
+  components: {
+    AppFooter
   }
 }
 </script>
@@ -121,6 +102,7 @@ export default {
 <style scoped lang="scss">
 @media all and (min-width: 769px){
   main{
+    width: 100vw;
     overflow: hidden;
     section{
       padding: 30px 0;
@@ -146,6 +128,73 @@ export default {
         }
       }
     }
+    .second_bg_color{
+      background-color: #90201f;
+      #about_content{
+        h2{
+          color: #FFF;
+        }
+        .profile_container{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin: 0 auto;
+          padding: 30px 0;
+          .profile_image{
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            object-fit: cover;
+            margin-right: 65px;
+          }
+          dl{
+            color: #FFF;
+            margin-left: 50px;
+            dt{
+              font-size: 23px;
+              font-weight: bold;
+            }
+            dd{
+              width: 500px;
+              margin: 0;
+              span{
+                display: block;
+                font-size: 12px;
+                margin-bottom: 30px;
+              }
+              .description{
+                margin-bottom: 30px;
+              }
+              .item_title{
+                font-size: 23px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+              .skills{
+                i{
+                  font-size: 30px;
+                  text-align: left;
+                  margin-right: 20px;
+                }
+              }
+              .contact{
+                width: 280px;
+                margin-top: 30px;
+                a{
+                  color: #FFF;
+                  text-decoration: none;
+                  &:hover{
+                    opacity: 0.7;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     #portfolio_content{
       text-align: center;
       .section-title{
@@ -166,7 +215,7 @@ export default {
           height: 380px;
           width: 380px;
           text-align: left;
-          box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+          box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
           border: 1px solid #CCC;
           border-radius: 10px;
           margin: 20px;
@@ -199,18 +248,9 @@ export default {
               }
             }
             &:hover{
-              box-shadow: 2px 15px 15px rgba(0,0,0,0.2);
+              box-shadow: 3px 15px 15px rgba(0,0,0,0.2);
             }
           }
-        }
-      }
-    }
-    .contact_content{
-      background-color: #90201f;
-      padding: 30px 0;
-      .section-title{
-        .is-fadeIn{
-          color: #FFF;
         }
       }
     }
@@ -220,7 +260,7 @@ export default {
   main{
     overflow-x: hidden;
     section{
-      padding: 20px 0;
+      padding: 30px 0;
       .section-title{
         text-align: center;
         h2{
@@ -240,6 +280,73 @@ export default {
           background: #FFF;
           transform: scaleX(0);
           animation: mask_fadeIn 1.0s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+        }
+      }
+    }
+    .second_bg_color{
+      background-color: #90201f;
+      #about_content{
+        h2{
+          color: #FFF;
+        }
+        .profile_container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          .profile_image{
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+          dl{
+            color: #FFF;
+            text-align: center;
+            dt{
+              font-size: 23px;
+              font-weight: bold;
+            }
+            dd{
+              width: 500px;
+              margin: 0;
+              span{
+                display: block;
+                font-size: 12px;
+                margin-bottom: 30px;
+              }
+              .description{
+                width: 280px;
+                font-size: 13px;
+                margin: 0 auto 30px;
+              }
+              .item_title{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+              .skills{
+                width: 280px;
+                margin: 0 auto 20px;
+                i{
+                  font-size: 25px;
+                  margin: 0 10px;
+                }
+              }
+              .contact{
+                width: 280px;
+                font-size: 15px;
+                margin: 20px auto 0;
+                a{
+                  color: #FFF;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -296,15 +403,6 @@ export default {
               }
             }
           }
-        }
-      }
-    }
-    .contact_content{
-      background-color: #90201f;
-      padding: 30px 0;
-      .section-title{
-        .is-fadeIn{
-          color: #FFF;
         }
       }
     }

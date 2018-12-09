@@ -3,19 +3,24 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router';
-import VueScrollTo from 'vue-scrollto'
-import '@fortawesome/fontawesome-free-webfonts/css/fontawesome.css'
-import '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css'
-import '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css'
-import '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css'
+import { routes } from './routes';
+import VueScrollTo from 'vue-scrollto';
+import store from './store';
 
 Vue.use(VueScrollTo)
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
+const router = new VueRouter({
+  mode: 'history',
+  routes,
+  store
+});
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   components: { App },
   template: '<App/>'
 })

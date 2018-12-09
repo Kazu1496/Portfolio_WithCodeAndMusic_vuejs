@@ -1,5 +1,6 @@
 <template>
   <main>
+    <div class="remove_bg"></div>
     <div class="first_bg_color"></div>
     <div class="main_content">
       <h1><span>W</span>ith <span>C</span>ode and <span>M</span>usic</h1>
@@ -13,7 +14,18 @@
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/kazu_real20" target="_blank">
+          <a
+            v-if="type == 'Engineer'"
+            href="https://twitter.com/kazu_real20"
+            target="_blank"
+            >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a
+            v-else
+            href="https://twitter.com/kurenai1496"
+            target="_blank"
+            >
             <i class="fab fa-twitter-square"></i>
           </a>
         </li>
@@ -41,9 +53,28 @@ export default {
     }
   },
   methods: {
-    toggleType: function () {
+    toggleType: () => {
       this.active = !this.active
     }
+  }
+}
+// ページロード完了時にアニメーション発火
+window.onload = () => {
+  var remove_bg = document.getElementsByClassName('remove_bg')[0];
+  var animation_bg = document.getElementsByClassName('first_bg_color')[0];
+  var body = document.getElementsByTagName('body')[0];
+
+  remove_bg.setAttribute('style', 'display: none');
+  if (body.clientWidth > 768) {
+    animation_bg.classList.add('class', 'moving-animation-pc');
+    setTimeout(() => {
+      animation_bg.setAttribute('style','left: 90%');
+    }, 3000)
+  } else {
+    animation_bg.classList.add('class', 'moving-animation-sp');
+    setTimeout(() => {
+      animation_bg.setAttribute('style','display: none');
+    }, 3000)
   }
 }
 </script>
@@ -54,16 +85,27 @@ export default {
   main{
     width: 100vw;
     overflow-x: hidden;
+    .remove_bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100vh + 10px);
+      width: 100%;
+      background-color: #90201f;
+      z-index: 20;
+    }
+    .moving-animation-pc{
+      animation: first_bg_moving 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    }
     .first_bg_color{
       position: absolute;
       top: 0;
-      left: 90%;
+      left: 0;
       height: calc(100vh + 10px);
       width: 100%;
       background-color: #90201f;
       z-index: 10;
       transform: skewX(-25deg);
-      animation: first_bg_moving 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     }
     .main_content{
       display: flex;
@@ -118,16 +160,26 @@ export default {
 @media all and (max-width: 768px){
   main{
     overflow: hidden;
+    .remove_bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100vh + 10px);
+      width: 100%;
+      background-color: #90201f;
+      z-index: 20;
+    }
+    .moving-animation-sp{
+      animation: first_bg_moving_sp 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    }
     .first_bg_color{
       position: absolute;
       top: 0;
-      left: 105%;
+      left: 0;
       height: calc(100vh + 10px);
       width: 100%;
       background-color: #90201f;
       z-index: 10;
-      transform: scale(0);
-      animation: first_bg_moving_sp 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     }
     .main_content{
       display: flex;
@@ -184,24 +236,21 @@ export default {
 }
 @keyframes first_bg_moving{
   0%{
-    transform: skewX(0deg) translateX(-90%);
+    transform: skewX(0deg) translateX(0);
   }
   50%{
-    transform: skewX(0deg) translateX(15%);
+    transform: skewX(0deg) translateX(100%);
   }
   100%{
-    transform: skewX(-25deg) translateX(0%);
+    transform: skewX(-25deg) translateX(90%);
   }
 }
 @keyframes first_bg_moving_sp{
   0%{
-    transform: translateX(-105%);
-  }
-  50%{
-    transform: translateX(15%);
+    transform: translateX(0);
   }
   100%{
-    transform: translateX(0%);
+    transform: translateX(105%);
   }
 }
 </style>
