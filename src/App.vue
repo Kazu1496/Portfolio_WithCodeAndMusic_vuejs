@@ -9,6 +9,7 @@
 <script>
 import AppHeader from './components/AppHeader'
 import PageTop from './components/PageTop'
+
 export default {
   name: 'App',
   components: {

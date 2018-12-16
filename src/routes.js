@@ -2,10 +2,12 @@ import Engineer from './components/PageSectionEngineer.vue';
 import Artist from './components/PageSectionArtist.vue';
 
 export const routes = [
-  { path: '/',
+  {
+    path: '/',
     component: Engineer
   },
-  { path: '/artist',
+  {
+    path: '/artist',
     component: Artist
   }
 ];
