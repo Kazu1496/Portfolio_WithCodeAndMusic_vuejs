@@ -13,14 +13,14 @@ Vue.config.productionTip = false
 
 const router = new VueRouter({
   mode: 'history',
-  routes,
-  store
+  routes
 });
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

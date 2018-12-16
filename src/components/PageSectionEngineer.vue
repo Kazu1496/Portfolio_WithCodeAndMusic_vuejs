@@ -3,7 +3,7 @@
     <div class="second_bg_color">
       <section id="about_content">
         <div class="section-title">
-          <h2>About Me</h2>
+          <h2 class="is-fadeIn">About Me</h2>
         </div>
         <div class="profile_container">
           <img src="../assets/profile_image.jpg" class="profile_image" size="150x150">

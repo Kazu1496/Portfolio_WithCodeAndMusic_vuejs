@@ -14,6 +14,8 @@
             <dd>
               <div class="description">
                 <span>Birthday 1997 / 05 / 30</span>
+                食をこよなく愛するギタリスト兼コンポーザー。<br>
+                ロックでエモーショナルな演奏、作編曲を得意とする。<br><br>
                 12歳の時にバンド活動していた兄の影響でギターを始める。<br><br>
                 15歳の時、よりギタースキルを効率よく身につけられないかと試行錯誤した結果、動画投稿サイトに自身の演奏動画を公開するという考えに辿りつき、実際に動画投稿し始める。<br><br>
                 18歳の頃から様々な世界規模のギターコンテストに参加するようになり、入賞やグランプリ、さらには世界トップ３０のギタリストに選ばれるなど、数々の賞を頂く。またこの頃から本格的にギタリスト作編曲家として活動を始める。<br><br>
@@ -78,7 +80,7 @@ export default {
           height: 100%;
           background: #FFF;
           transform: scaleX(0);
-          animation: mask_fadeIn 1.0s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+          animation: mask_fadeIn 1.0s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
         }
       }
     }
@@ -182,7 +184,7 @@ export default {
           height: 100%;
           background: #FFF;
           transform: scaleX(0);
-          animation: mask_fadeIn 1.0s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+          animation: mask_fadeIn 1.0s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
         }
       }
     }

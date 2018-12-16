@@ -1,61 +1,28 @@
 <template>
   <header>
     <ul>
-      <!-- <li>
-        <transition name="fade">
-          <router-link
-            to="/artist"
-            v-if="type == 'Engineer'"
-            @click.native="typeToggle"
-            v-scroll-to="'#about_content'"
-            >
-            {{ type }}
-          </router-link>
-          <router-link
-            to="/"
-            v-else
-            @click.native="typeToggle"
-            v-scroll-to="'#about_content'"
-            >
-            {{ type }}
-          </router-link>
-        </transition>
-      </li> -->
       <li>
-        <a href="javascript:void(0)" v-scroll-to="'#about_content'">About</a>
-      </li>
-      <li>
-        <a href="javascript:void(0)" v-scroll-to="'#portfolio_content'">Works</a>
+        <router-link
+          to="/artist"
+          v-if="type == 'Engineer'"
+          @click.native="typeToggle"
+          v-scroll-to="'#about_content'"
+          >
+          {{ type }}
+        </router-link>
+        <router-link
+          to="/"
+          v-else
+          @click.native="typeToggle"
+          v-scroll-to="'#about_content'"
+          >
+          {{ type }}
+        </router-link>
       </li>
       <li>
         <a href="mailto:ishikura.kazumasa@gmail.com">Contact</a>
       </li>
     </ul>
-    <!-- <ul v-else>
-      <li>
-        <transition name="fade">
-          <router-link
-            to="/artist"
-            v-if="type == 'Engineer'"
-            @click.native="typeToggle"
-            v-scroll-to="'#about_content'"
-            >
-            {{ type }}
-          </router-link>
-          <router-link
-            to="/"
-            v-else
-            @click.native="typeToggle"
-            v-scroll-to="'#about_content'"
-            >
-            {{ type }}
-          </router-link>
-        </transition>
-      </li>
-      <li>
-        <a href="mailto:nico.kurenai@gmail.com">Contact</a>
-      </li>
-    </ul> -->
   </header>
 </template>
 
@@ -63,18 +30,14 @@
 import { mapGetters } from 'vuex'
 export default {
   name: 'AppHeader',
-  data: () => {
-    return {
-      type: 'Engineer'
+  computed: {
+    type () {
+      return this.$store.getters.getType
     }
   },
   methods: {
-    typeToggle: () => {
-      if ( this.type == 'Engineer' ){
-        this.type = 'Artist'
-      } else {
-        this.type = 'Engineer'
-      }
+    typeToggle () {
+      this.$store.dispatch('typeToggle')
     }
   }
 }

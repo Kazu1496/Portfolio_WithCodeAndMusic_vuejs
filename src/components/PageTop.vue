@@ -1,7 +1,10 @@
 <template>
-  <main>
-    <div class="remove_bg"></div>
+  <section>
+    <div class="remove_bg">
+      <p class="loading_num"></p>
+    </div>
     <div class="first_bg_color"></div>
+    <div class="first_bg_color_2"></div>
     <div class="main_content">
       <h1><span>W</span>ith <span>C</span>ode and <span>M</span>usic</h1>
       <p>
@@ -41,7 +44,10 @@
         </li>
       </ol>
     </div>
-  </main>
+    <div class="scroll_mark" v-scroll-to="'#about_content'">
+      <i class="fas fa-angle-down"></i>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -62,19 +68,17 @@ window.onload = () => {
   // ページロード完了時にアニメーション発火
   const remove_bg = document.getElementsByClassName('remove_bg')[0];
   const animation_bg = document.getElementsByClassName('first_bg_color')[0];
+  const animation_bg_2 = document.getElementsByClassName('first_bg_color_2')[0];
   const body = document.getElementsByTagName('body')[0];
 
   remove_bg.setAttribute('style', 'display: none');
   if (body.clientWidth > 768) {
     animation_bg.classList.add('class', 'moving-animation-pc');
     animation_bg.addEventListener('animationend', () => {
-      animation_bg.setAttribute('style','left: 90%');
+      animation_bg_2.classList.add('class','moving-animation-2-pc');
     });
   } else {
     animation_bg.classList.add('class', 'moving-animation-sp');
-    animation_bg.addEventListener('animationend', () => {
-      animation_bg.setAttribute('style','display: none');
-    });
   }
 }
 </script>
@@ -82,29 +86,48 @@ window.onload = () => {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @media all and (min-width: 769px){
-  main{
+  section{
     width: 100vw;
     overflow-x: hidden;
     .remove_bg{
-      position: absolute;
+      position: fixed;
       top: 0;
-      height: calc(100vh + 10px);
+      height: 100vh;
       width: 100%;
       background-color: #90201f;
       z-index: 20;
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFF;
+        font-size: 20px;
+      }
     }
     .moving-animation-pc{
-      animation: first_bg_moving 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+      animation: first_bg_moving 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+    }
+    .moving-animation-2-pc{
+      animation: first_bg_moving_2 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
     }
     .first_bg_color{
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: calc(100vh + 10px);
       width: 100%;
       background-color: #90201f;
       z-index: 10;
-      transform: skewX(-25deg);
+    }
+    .first_bg_color_2{
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: calc(100vh + 10px);
+      width: 100%;
+      background-color: #90201f;
+      z-index: 10;
     }
     .main_content{
       display: flex;
@@ -139,9 +162,11 @@ window.onload = () => {
       ol{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width: 200px;
+        padding: 0;
         li{
           list-style: none;
-          padding-right: 30px;
           a{
             i{
               font-size: 20px;
@@ -154,10 +179,35 @@ window.onload = () => {
         }
       }
     }
+    .scroll_mark{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      color: #90201f;
+      text-align: center;
+      background-color: #FFF;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s;
+      animation: scroll_animation 2s ease-in-out infinite normal;
+      &:hover{
+        color: #FFF;
+        background-color: #90201f;
+      }
+      i{
+        font-size: 30px;
+      }
+    }
   }
 }
 @media all and (max-width: 768px){
-  main{
+  section{
     overflow: hidden;
     .remove_bg{
       position: absolute;
@@ -169,7 +219,7 @@ window.onload = () => {
       z-index: 20;
     }
     .moving-animation-sp{
-      animation: first_bg_moving_sp 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+      animation: first_bg_moving_sp 3s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
     }
     .first_bg_color{
       position: absolute;
@@ -179,6 +229,9 @@ window.onload = () => {
       width: 100%;
       background-color: #90201f;
       z-index: 10;
+    }
+    .first_bg_color_2{
+      display: none;
     }
     .main_content{
       display: flex;
@@ -231,17 +284,47 @@ window.onload = () => {
         }
       }
     }
+    .scroll_mark{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      color: #90201f;
+      text-align: center;
+      background-color: #FFF;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s;
+      animation: scroll_animation 2s ease-in-out infinite normal;
+      &:hover{
+        color: #FFF;
+        background-color: #90201f;
+      }
+      i{
+        font-size: 30px;
+      }
+    }
   }
 }
 @keyframes first_bg_moving{
   0%{
     transform: skewX(0deg) translateX(0);
   }
-  50%{
+  100%{
     transform: skewX(0deg) translateX(100%);
   }
+}
+@keyframes first_bg_moving_2{
+  0%{
+    transform: skewX(0deg);
+  }
   100%{
-    transform: skewX(-25deg) translateX(90%);
+    transform: skewX(-25deg) translateX(-10%);
   }
 }
 @keyframes first_bg_moving_sp{
@@ -250,6 +333,17 @@ window.onload = () => {
   }
   100%{
     transform: translateX(105%);
+  }
+}
+@keyframes scroll_animation{
+  0%{
+    top: 85%;
+  }
+  50%{
+    top: calc(85% + 15px);
+  }
+  100%{
+    top: 85%;
   }
 }
 </style>
