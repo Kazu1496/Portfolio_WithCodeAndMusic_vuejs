@@ -206,11 +206,11 @@ export default {
       .portfolio_container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 300px;
         margin: 0 auto;
+        padding: 0 10px;
         .portfolio_card{
           height: 300px;
           width: 300px;

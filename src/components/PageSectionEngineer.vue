@@ -15,8 +15,11 @@
               <div class="description">
                 <span>Birthday 1997 / 05 / 30</span>
                 フロントエンドエンジニア、ギタリストとして活動している食をこよなく愛する大学生<br><br>
-                大学3年になったとき、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思い、プログラミングに対する興味が湧き、独学でHTML/CSS/JavaScriptを身につける。<br><br>
-                業務では主にRubyOnRails/jQueryを用いたフロントエンド開発を担当しており、趣味でVue.js/ReactNativeなどに触れている。
+                初めてプログラミングに対して興味をもったのが高校２年の時。エンジニアとして活躍する兄が、黒い画面に文字を入力するだけで、ゲームやWebサイトが出来上がっていくのをみて、自分もやってみたい！カッコイイ！と思ったのが始まり。
+                しかし、始めた当初は音楽活動に熱中していたこともあって、Ｃ言語をほんの少しかじった程度でプログラミングに対する熱が冷めてしまう。<br><br>
+                音楽活動がある程度落ち着いてきたときに、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思ったのがきっかけで、独学でHTML5/CSS3/JavaScriptを身につける。
+                ポートフォリオサイトを作りきったときにコーディングの楽しさを改めて感じ、プログラミングに対する興味が再燃した。<br><br>
+                普段は、RubyOnRails/Javascript(jQuery, Vue.js)を用いてフロント周りの開発をしている。
               </div>
               <div class="skills">
                 <p class="item_title">Skills</p>
@@ -326,7 +329,7 @@ export default {
               .item_title{
                 font-size: 20px;
                 font-weight: bold;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
               }
               .skills{
                 width: 280px;
@@ -358,15 +361,15 @@ export default {
         }
       }
       .portfolio_container{
-        width: 300px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         margin: 0 auto;
         .portfolio_card{
-          height: 260px;
+          width: 300px;
+          height: 280px;
           text-align: left;
           box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
           border: 1px solid #CCC;
@@ -390,7 +393,7 @@ export default {
               }
               .item_description{
                 font-size: 11px;
-                margin: 5px 0;
+                margin: 15px 0;
               }
               .work-tag{
                 display: inline-block;
