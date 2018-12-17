@@ -13,11 +13,6 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const env = require('../config/prod.env')
 
-const historyApiFallback = require("connect-history-api-fallback");
-const addon = (app, middleware, option) => {
-  app.use(convert(historyApiFallback()));
-};
-
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({

@@ -15,11 +15,6 @@ const router = new VueRouter({
   mode: 'history',
   routes
 });
-// 規定パス以外のパスにアクセスされたときルートに返す
-router.replace({
-  path: '',
-  redirect: '/'
-})
 
 /* eslint-disable no-new */
 new Vue({

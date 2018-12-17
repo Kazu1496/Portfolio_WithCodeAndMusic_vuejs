@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="remove_bg">
-      <p class="loading_num"></p>
+      <!-- <p>LOADING</p> -->
     </div>
     <div class="first_bg_color"></div>
     <div class="first_bg_color_2"></div>
@@ -79,6 +79,9 @@ window.onload = () => {
     });
   } else {
     animation_bg.classList.add('class', 'moving-animation-sp');
+    animation_bg.addEventListener('animationend', () => {
+      animation_bg.setAttribute('style', 'display: none');
+    });
   }
 }
 </script>
@@ -97,12 +100,14 @@ window.onload = () => {
       background-color: #90201f;
       z-index: 20;
       p{
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #FFF;
         font-size: 20px;
+        letter-spacing: 10px;
+        animation: loading_mask 3s ease-in-out infinite normal;
       }
     }
     .moving-animation-pc{
@@ -344,6 +349,17 @@ window.onload = () => {
   }
   100%{
     top: 85%;
+  }
+}
+@keyframes loading_mask{
+  0%{
+    text-shadow: 5px 0px 10px #FFF;
+  }
+  50%{
+    text-shadow: 5px 0px 0px #FFF;
+  }
+  100%{
+    text-shadow: 5px 0px 10px #FFF;
   }
 }
 </style>
