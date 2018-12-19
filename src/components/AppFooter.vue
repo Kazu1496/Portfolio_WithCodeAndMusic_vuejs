@@ -22,7 +22,7 @@
         </a>
       </li>
     </ol>
-    <p>© 2018 Kazumasa Ishikura ver.1.0</p>
+    <p>© 2018 Kazumasa Ishikura ver.1.3</p>
   </footer>
 </template>
 

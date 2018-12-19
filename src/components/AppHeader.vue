@@ -8,7 +8,7 @@
           @click.native="typeToggle"
           v-scroll-to="'#about_content'"
           >
-          {{ type }}
+          Artist
         </router-link>
         <router-link
           to="/"
@@ -16,7 +16,7 @@
           @click.native="typeToggle"
           v-scroll-to="'#about_content'"
           >
-          {{ type }}
+          Engineer
         </router-link>
       </li>
       <li>

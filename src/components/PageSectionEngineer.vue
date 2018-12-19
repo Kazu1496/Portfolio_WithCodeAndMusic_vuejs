@@ -52,6 +52,8 @@
               "もっとQiitaで情報収集しやすく！"をコンセプトに「気になる人、気になるタグ、今のトレンド」をリアルタイムウォッチできるWebサービス<br>
             </p>
             <p class="work-tag">Ruby on Rails</p>
+            <p class="work-tag">jQuery</p>
+            <p class="work-tag">GAS</p>
           </a>
         </div>
         <div class="portfolio_card">
