@@ -215,7 +215,7 @@ window.onload = () => {
   section{
     overflow: hidden;
     .remove_bg{
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: calc(100vh + 10px);
@@ -224,10 +224,10 @@ window.onload = () => {
       z-index: 20;
     }
     .moving-animation-sp{
-      animation: first_bg_moving_sp 3s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+      animation: first_bg_moving_sp 2s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
     }
     .first_bg_color{
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: calc(100vh + 10px);

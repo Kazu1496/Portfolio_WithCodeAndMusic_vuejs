@@ -19,7 +19,7 @@
                 しかし、始めた当初は音楽活動に熱中していたこともあって、Ｃ言語をほんの少しかじった程度でプログラミングに対する熱が冷めてしまう。<br><br>
                 音楽活動がある程度落ち着いてきたときに、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思ったのがきっかけで、独学でHTML5/CSS3/JavaScriptを身につける。
                 ポートフォリオサイトを作りきったときにコーディングの楽しさを改めて感じ、プログラミングに対する興味が再燃した。<br><br>
-                普段は、RubyOnRails/Javascript(jQuery, Vue.js)を用いてフロント周りの開発をしている。
+                普段は、RubyOnRails/Javascript(jQuery, Vue.js)を用いて開発をしている。
               </div>
               <div class="skills">
                 <p class="item_title">Skills</p>
