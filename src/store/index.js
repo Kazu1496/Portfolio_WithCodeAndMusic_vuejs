@@ -22,7 +22,7 @@ const getters = {
 
 const mutations = {
   typeToggle(state){
-    if (state.type == "Engineer"){
+    if (state.type === "Engineer"){
       state.type = "Artist";
     } else {
       state.type = "Engineer";
