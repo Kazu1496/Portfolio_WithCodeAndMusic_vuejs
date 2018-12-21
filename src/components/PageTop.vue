@@ -228,6 +228,18 @@ window.onload = () => {
       width: 100%;
       background-color: #90201f;
       z-index: 20;
+      p{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFF;
+        font-size: 15px;
+        letter-spacing: 10px;
+      }
+      .fadeout{
+        animation: fadeOut 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+      }
     }
     .moving-animation-sp{
       animation: first_bg_moving_sp 2s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
