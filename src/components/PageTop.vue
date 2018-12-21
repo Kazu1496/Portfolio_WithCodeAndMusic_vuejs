@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="remove_bg">
-      <!-- <p>LOADING</p> -->
+      <p class="loading_text">LOADING</p>
     </div>
     <div class="first_bg_color"></div>
     <div class="first_bg_color_2"></div>
@@ -70,19 +70,23 @@ window.onload = () => {
   const animation_bg = document.getElementsByClassName('first_bg_color')[0];
   const animation_bg_2 = document.getElementsByClassName('first_bg_color_2')[0];
   const body = document.getElementsByTagName('body')[0];
+  const loading_text = document.getElementsByClassName('loading_text')[0];
 
-  remove_bg.setAttribute('style', 'display: none');
-  if (body.clientWidth > 768) {
-    animation_bg.classList.add('class', 'moving-animation-pc');
-    animation_bg.addEventListener('animationend', () => {
-      animation_bg_2.classList.add('class','moving-animation-2-pc');
-    });
-  } else {
-    animation_bg.classList.add('class', 'moving-animation-sp');
-    animation_bg.addEventListener('animationend', () => {
-      animation_bg.setAttribute('style', 'display: none');
-    });
-  }
+  loading_text.classList.add('class', 'fadeout')
+  loading_text.addEventListener('animationend', () => {
+    remove_bg.setAttribute('style', 'display: none');
+    if (body.clientWidth > 768) {
+      animation_bg.classList.add('class', 'moving-animation-pc');
+      animation_bg.addEventListener('animationend', () => {
+        animation_bg_2.classList.add('class','moving-animation-2-pc');
+      });
+    } else {
+      animation_bg.classList.add('class', 'moving-animation-sp');
+      animation_bg.addEventListener('animationend', () => {
+        animation_bg.setAttribute('style', 'display: none');
+      });
+    }
+  });
 }
 </script>
 
@@ -105,9 +109,11 @@ window.onload = () => {
         left: 50%;
         transform: translate(-50%, -50%);
         color: #FFF;
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 10px;
-        animation: loading_mask 3s ease-in-out infinite normal;
+      }
+      .fadeout{
+        animation: fadeOut 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
       }
     }
     .moving-animation-pc{
@@ -360,6 +366,14 @@ window.onload = () => {
   }
   100%{
     text-shadow: 5px 0px 10px #FFF;
+  }
+}
+@keyframes fadeOut{
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 </style>
