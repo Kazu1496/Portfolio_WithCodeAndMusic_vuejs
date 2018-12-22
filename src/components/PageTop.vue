@@ -18,7 +18,7 @@
         </li>
         <li>
           <a
-            v-if="type == 'Engineer'"
+            v-if="type === 'Engineer'"
             href="https://twitter.com/kazu_real20"
             target="_blank"
             >
@@ -32,14 +32,24 @@
             <i class="fab fa-twitter-square"></i>
           </a>
         </li>
-        <li>
+        <li v-if="type === 'Engineer'">
           <a href="https://www.facebook.com/profile.php?id=100013086785196" target="_blank">
             <i class="fab fa-facebook-square"></i>
           </a>
         </li>
-        <li>
+        <li v-if="type === 'Artist'">
+          <a href="https://www.youtube.com/channel/UCxlAoJglz1U38HFu2UY3AHg" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li v-if="type === 'Engineer'">
           <a href="https://github.com/Kazu1496" target="_blank">
             <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li v-if="type === 'Artist'">
+          <a href="https://soundcloud.com/k-ishikura-guitar-kurenai" target="_blank">
+            <i class="fab fa-soundcloud"></i>
           </a>
         </li>
       </ol>
@@ -51,6 +61,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'PageTop',
   data () {
@@ -61,6 +72,11 @@ export default {
   methods: {
     toggleType: () => {
       this.active = !this.active
+    }
+  },
+  computed: {
+    type () {
+      return this.$store.getters.getType
     }
   }
 }
