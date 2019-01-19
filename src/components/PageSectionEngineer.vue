@@ -45,15 +45,14 @@
       </div>
       <div class="portfolio_container">
         <div class="portfolio_card">
-          <a href="https://qiitadeck.com/" target="_blank">
+          <a href="https://ekichika.herokuapp.com/" target="_blank">
             <div class="item_image image1"></div>
-            <h3>QiitaDeck</h3>
+            <h3>エキチカ！</h3>
             <p class="item_description">
-              "もっとQiitaで情報収集しやすく！"をコンセプトに「気になる人、気になるタグ、今のトレンド」をリアルタイムウォッチできるWebサービス<br>
+              「第二回東京公共交通オープンデータチャレンジ」エントリー作品。
+              駅周辺の知りたい施設情報を簡単に調べることができるアプリ。
             </p>
-            <p class="work-tag">Ruby on Rails</p>
-            <p class="work-tag">jQuery</p>
-            <p class="work-tag">GAS</p>
+            <p class="work-tag">Django</p>
           </a>
         </div>
         <div class="portfolio_card">
@@ -67,9 +66,21 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="javascript:void(0)" target="_blank">
+          <a href="https://qiitadeck.com/" target="_blank">
             <div class="item_image image3"></div>
-            <h3>kurenai-works</h3>
+            <h3>QiitaDeck</h3>
+            <p class="item_description">
+              "もっとQiitaで情報収集しやすく！"をコンセプトに「気になる人、気になるタグ、今のトレンド」をリアルタイムウォッチできるWebサービス<br>
+            </p>
+            <p class="work-tag">Ruby on Rails</p>
+            <p class="work-tag">jQuery</p>
+            <p class="work-tag">GAS</p>
+          </a>
+        </div>
+        <div class="portfolio_card">
+          <a href="javascript:void(0)" target="_blank">
+            <div class="item_image image4"></div>
+            <h3>Kurenai-works</h3>
             <p class="item_description">
               初めて０制作した自身のアーティストとしての活動をまとめたポートフォリオサイト。HTML / CSS / JavaScript(jQuery)の学習も兼ねて開発。※閉鎖中<br>
             </p>
@@ -80,7 +91,7 @@
         </div>
         <div class="portfolio_card">
           <a href="https://github.com/Kazu1496" target="_blank">
-            <div class="item_image image4"></div>
+            <div class="item_image image5"></div>
             <h3>More GitHub</h3>
             <p class="item_description">
               過去・現在進行系で進んでいるプロジェクト、作品をオープンソースで公開しています<br>
@@ -226,7 +237,7 @@ export default {
           margin: 20px;
           padding: 20px;
           transition: box-shadow 0.5s;
-          @for $i from 1 through 4{
+          @for $i from 1 through 5{
             a{
               text-decoration: none;
               color: #222;
@@ -378,7 +389,7 @@ export default {
           border-radius: 10px;
           margin: 20px;
           padding: 20px;
-          @for $i from 1 through 4{
+          @for $i from 1 through 5{
             a{
               text-decoration: none;
               color: #222;
