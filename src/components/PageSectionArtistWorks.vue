@@ -187,7 +187,7 @@ export default {
         h2{
           position: relative;
           display: inline-block;
-          font-size: 25px;
+          font-size: 30px;
           color: #222;
           letter-spacing: 10px;
         }
@@ -207,14 +207,15 @@ export default {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        width: 300px;
+        width: 80%;
         margin: 0 auto;
         padding: 30px 0;
         li{
           display: flex;
           flex-direction: row;
           align-items: center;
-          width: 300px;
+          justify-content: space-between;
+          width: 80%;
           text-align: left;
           list-style: none;
           border-bottom: 1px solid #CCC;
@@ -226,14 +227,14 @@ export default {
           @for $i from 1 through 6{
             color: #222;
             .image#{$i}{
-              height: 100px;
-              width: 100px;
+              height: 150px;
+              width: 150px;
               background: url("../assets/artist_image#{$i}.jpg") no-repeat center;
               background-size: cover;
               margin-left: 10px;
             }
             .portfolio_item{
-              width: 170px;
+              width: 300px;
               margin-left: 20px;
               h3{
                 font-size: 13px;
@@ -263,6 +264,32 @@ export default {
                   box-shadow: 2px 5px 5px rgba(0,0,0,0.4);
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 640px){
+  main{
+    section{
+      .section-title{
+        h2{
+          font-size: 25px;
+        }
+      }
+      ul{
+        width: 300px;
+        li{
+          width: 300px;
+          @for $i from 1 through 6{
+            .image#{$i}{
+              height: 100px;
+              width: 100px;
+            }
+            .portfolio_item{
+              width: 170px;
             }
           }
         }

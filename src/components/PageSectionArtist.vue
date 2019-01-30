@@ -23,7 +23,7 @@
               </div>
               <div class="contact">
                 <p class="item_title">Contact</p>
-                <a href="mailto:ishikura.kazumasa@gmail.com">nico.kurenai@gmail.com</a>
+                <p>制作依頼・ご相談など<a href="mailto:ishikura.kazumasa@gmail.com">こちら</a>よりお気軽にお問い合わせください。</p>
               </div>
             </dd>
           </dl>
@@ -171,7 +171,7 @@ export default {
         h2{
           position: relative;
           display: inline-block;
-          font-size: 25px;
+          font-size: 30px;
           color: #222;
           letter-spacing: 10px;
         }
@@ -212,7 +212,7 @@ export default {
             color: #FFF;
             text-align: center;
             dt{
-              font-size: 23px;
+              font-size: 25px;
               font-weight: bold;
             }
             dd{
@@ -220,35 +220,66 @@ export default {
               margin: 0;
               span{
                 display: block;
-                font-size: 12px;
+                font-size: 13px;
                 margin-bottom: 30px;
+              }
+              .description{
+                width: 100%;
+                font-size: 14px;
+                margin: 0 auto 30px;
+              }
+              .item_title{
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+              .contact{
+                width: 100%;
+                font-size: 14px;
+                margin: 20px auto 0;
+                a{
+                  color: #FFF;
+                  margin: 0 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 640px){
+  main{
+    section{
+      .section-title{
+        h2{
+          font-size: 25px;
+        }
+      }
+    }
+    .second_bg_color{
+      #about_content{
+        .profile_container{
+          dl{
+            dt{
+              font-size: 23px;
+            }
+            dd{
+              width: 500px;
+              span{
+                font-size: 12px;
               }
               .description{
                 width: 280px;
                 font-size: 13px;
-                margin: 0 auto 30px;
               }
               .item_title{
                 font-size: 20px;
-                font-weight: bold;
-                margin-bottom: 10px;
-              }
-              .skills{
-                width: 280px;
-                margin: 0 auto 20px;
-                i{
-                  font-size: 30px;
-                  margin: 0 10px;
-                }
               }
               .contact{
                 width: 280px;
-                font-size: 15px;
-                margin: 20px auto 0;
-                a{
-                  color: #FFF;
-                  text-decoration: none;
-                }
+                font-size: 13px;
               }
             }
           }

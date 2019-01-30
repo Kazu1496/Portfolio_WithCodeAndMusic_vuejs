@@ -14,12 +14,11 @@
             <dd>
               <div class="description">
                 <span>Birthday 1997 / 05 / 30</span>
-                フロントエンドエンジニア、ギタリストとして活動している食をこよなく愛する大学生<br><br>
-                初めてプログラミングに対して興味をもったのが高校２年の時。エンジニアとして活躍する兄が、黒い画面に文字を入力するだけで、ゲームやWebサイトが出来上がっていくのをみて、自分もやってみたい！カッコイイ！と思ったのが始まり。
-                しかし、始めた当初は音楽活動に熱中していたこともあって、Ｃ言語をほんの少しかじった程度でプログラミングに対する熱が冷めてしまう。<br><br>
-                音楽活動がある程度落ち着いてきたときに、アーティストとしての活動実績をまとめたポートフォリオサイトを作りたいと思ったのがきっかけで、独学でHTML5/CSS3/JavaScriptを身につける。
-                ポートフォリオサイトを作りきったときにコーディングの楽しさを改めて感じ、プログラミングに対する興味が再燃した。<br><br>
-                普段は、RubyOnRails/Javascript(jQuery, Vue.js)を用いて開発をしている。
+                食をこよなく愛するフロントエンドエンジニア兼ギタリスト作曲家。<br><br>
+                普段は、RubyOnRails/Javascriptを用いてWebサービス開発を行ったり、ギタリストとして様々な楽曲に参加したりしている。<br>
+                フロントエンド周りが得意、バックエンドも触ります。<br><br>
+                何事にも負けず嫌いで、興味をもったものにはとことん挑戦する性分なので、いつも全力で手を動かしています。<br><br>
+                制作依頼・ご相談など<a href="mailto:ishikura.kazumasa@gmail.com">こちら</a>よりお気軽にお問い合わせください。
               </div>
               <div class="skills">
                 <p class="item_title">Skills</p>
@@ -30,9 +29,9 @@
                 <i class="fab fa-vuejs"></i>
                 <i class="fab fa-github-square"></i>
               </div>
-              <div class="contact">
-                <p class="item_title">Contact</p>
-                <a href="mailto:ishikura.kazumasa@gmail.com">ishikura.kazumasa@gmail.com</a>
+              <div class="likes">
+                <p class="item_title">Likes</p>
+                <p>食べ歩き / 動画・音楽鑑賞 / バスケットボール / アニメ</p>
               </div>
             </dd>
           </dl>
@@ -182,6 +181,13 @@ export default {
               }
               .description{
                 margin-bottom: 30px;
+                a{
+                  color: #FFF;
+                  margin: 0 5px;
+                  &:hover{
+                    opacity: 0.7;
+                  }
+                }
               }
               .item_title{
                 font-size: 23px;
@@ -195,16 +201,8 @@ export default {
                   margin-right: 20px;
                 }
               }
-              .contact{
-                width: 280px;
+              .likes{
                 margin-top: 30px;
-                a{
-                  color: #FFF;
-                  text-decoration: none;
-                  &:hover{
-                    opacity: 0.7;
-                  }
-                }
               }
             }
           }
@@ -282,7 +280,7 @@ export default {
         h2{
           position: relative;
           display: inline-block;
-          font-size: 25px;
+          font-size: 30px;
           color: #222;
           letter-spacing: 10px;
         }
@@ -323,24 +321,31 @@ export default {
             color: #FFF;
             text-align: center;
             dt{
-              font-size: 23px;
+              font-size: 24px;
               font-weight: bold;
             }
             dd{
-              width: 500px;
+              width: 100%;
               margin: 0;
               span{
                 display: block;
-                font-size: 12px;
+                font-size: 13px;
                 margin-bottom: 30px;
               }
               .description{
-                width: 280px;
-                font-size: 13px;
+                width: 500px;
+                font-size: 15px;
                 margin: 0 auto 30px;
+                a{
+                  color: #FFF;
+                  margin: 0 5px;
+                  &:hover{
+                    opacity: 0.7;
+                  }
+                }
               }
               .item_title{
-                font-size: 20px;
+                font-size: 24px;
                 font-weight: bold;
                 margin-bottom: 20px;
               }
@@ -352,14 +357,8 @@ export default {
                   margin: 0 10px;
                 }
               }
-              .contact{
-                width: 280px;
+              .likes{
                 font-size: 15px;
-                margin: 20px auto 0;
-                a{
-                  color: #FFF;
-                  text-decoration: none;
-                }
               }
             }
           }
@@ -376,7 +375,7 @@ export default {
       .portfolio_container{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -420,6 +419,61 @@ export default {
             }
           }
         }
+      }
+    }
+  }
+}
+@media all and (max-width: 640px){
+  main{
+    section{
+      .section-title{
+        h2{
+          font-size: 25px;
+        }
+      }
+    }
+    .second_bg_color{
+      #about_content{
+        h2{
+          color: #FFF;
+        }
+        .profile_container{
+          dl{
+            color: #FFF;
+            text-align: center;
+            dt{
+              font-size: 23px;
+              font-weight: bold;
+            }
+            dd{
+              width: 100%;
+              margin: 0;
+              span{
+                display: block;
+                font-size: 12px;
+                margin-bottom: 30px;
+              }
+              .description{
+                width: 280px;
+                font-size: 13px;
+                margin: 0 auto 30px;
+              }
+              .item_title{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+              .likes{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #portfolio_content{
+      .portfolio_container{
+        justify-content: space-around;
       }
     }
   }

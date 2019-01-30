@@ -83,7 +83,7 @@ export default {
       height: 20px;
       padding: 0;
       li{
-        font-size: 13px;
+        font-size: 20px;
         list-style: none;
         padding: 0 15px;
         &:not(:last-child){
@@ -93,6 +93,15 @@ export default {
           text-decoration: none;
           color: #888;
         }
+      }
+    }
+  }
+}
+@media all and (max-width: 640px){
+  header{
+    ul{
+      li{
+        font-size: 13px;
       }
     }
   }

@@ -283,8 +283,8 @@ window.onload = () => {
       height: calc(100vh - 50px);
       color: #222;
       h1{
-        width: 280px;
-        font-size: 30px;
+        width: 100%;
+        font-size: 35px;
         text-transform: uppercase;
         color: transparent;
         -webkit-background-clip: text;
@@ -294,12 +294,12 @@ window.onload = () => {
         user-select: none;
         letter-spacing: 5px;
         span{
-          font-size: 50px;
+          font-size: 65px;
         }
       }
       p{
-        font-size: 10px;
-        letter-spacing: 1px;
+        font-size: 13px;
+        letter-spacing: 3px;
         line-height: 20px;
         margin-bottom: 40px;
       }
@@ -313,7 +313,7 @@ window.onload = () => {
           list-style: none;
           a{
             i{
-              font-size: 20px;
+              font-size: 25px;
               color: #222;
             }
             &:hover{
@@ -346,6 +346,34 @@ window.onload = () => {
       }
       i{
         font-size: 30px;
+      }
+    }
+  }
+}
+@media all and (max-width: 640px){
+  section{
+    .main_content{
+      h1{
+        width: 280px;
+        font-size: 30px;
+        span{
+          font-size: 50px;
+        }
+      }
+      p{
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        margin-bottom: 40px;
+      }
+      ol{
+        li{
+          a{
+            i{
+              font-size: 20px;
+            }
+          }
+        }
       }
     }
   }

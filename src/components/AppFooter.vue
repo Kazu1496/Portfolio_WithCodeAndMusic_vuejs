@@ -43,7 +43,7 @@
         </a>
       </li>
     </ol>
-    <p>© 2018 Kazumasa Ishikura ver.1.3</p>
+    <p>© 2019 Kazumasa Ishikura ver.1.3</p>
   </footer>
 </template>
 

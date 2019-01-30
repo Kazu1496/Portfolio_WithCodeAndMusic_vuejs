@@ -124,7 +124,7 @@ export default {
         }
       }
       ul{
-        width: 280px;
+        width: 100%;
         text-align: center;
         margin: 20px auto 0;
         padding: 0;
@@ -139,6 +139,20 @@ export default {
             letter-spacing: 3px;
           }
         }
+      }
+    }
+  }
+}
+@media all and (max-width: 640px){
+  main{
+    section{
+      .section-title{
+        h2{
+          font-size: 25px;
+        }
+      }
+      ul{
+        width: 280px;
       }
     }
   }

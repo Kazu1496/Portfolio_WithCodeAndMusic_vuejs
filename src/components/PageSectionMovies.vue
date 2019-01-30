@@ -269,4 +269,15 @@ export default {
     }
   }
 }
+@media all and (max-width: 640px){
+  main{
+    section{
+      .section-title{
+        h2{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
 </style>
