@@ -128,19 +128,11 @@ export default {
                 font-weight: bold;
                 margin-bottom: 20px;
               }
-              .skills{
-                i{
-                  font-size: 30px;
-                  text-align: left;
-                  margin-right: 20px;
-                }
-              }
               .contact{
-                width: 280px;
                 margin-top: 30px;
                 a{
                   color: #FFF;
-                  text-decoration: none;
+                  margin: 0 5px;
                   &:hover{
                     opacity: 0.7;
                   }
