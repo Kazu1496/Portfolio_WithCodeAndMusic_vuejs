@@ -6,7 +6,19 @@
       </div>
       <ul>
         <li>
-          <div class="item_image image1"></div>
+          <div class="item_image image7"></div>
+          <div class="portfolio_item">
+            <h3>Merge<span class="artist_name">WhileTrue:</span></h3>
+            <p class="item_description">
+              ■ 曲名　Eze<br>
+              ■ 担当　作編曲
+            </p>
+            <a href="https://twitter.com/WhileTrue_JPN" target="_blank" rel="noreferrer">Twitter</a>
+            <a href="https://whiletrue-jpn.com/" target="_blank" rel="noreferrer">Official Site</a>
+          </div>
+        </li>
+        <li>
+          <div class="item_image image6"></div>
           <div class="portfolio_item">
             <h3>Nataria:Code<span class="artist_name">WHITEFISTS</span></h3>
             <p class="item_description">
@@ -17,7 +29,7 @@
           </div>
         </li>
         <li>
-          <div class="item_image image2"></div>
+          <div class="item_image image5"></div>
           <div class="portfolio_item">
             <h3>One For All , All For One<span class="artist_name">WhileTrue:</span></h3>
             <p class="item_description">
@@ -30,7 +42,7 @@
           </div>
         </li>
         <li>
-          <div class="item_image image3"></div>
+          <div class="item_image image4"></div>
           <div class="portfolio_item">
             <h3>ぬけがら<span class="artist_name">優月心菜</span></h3>
             <p class="item_description">
@@ -41,7 +53,7 @@
           </div>
         </li>
         <li>
-          <div class="item_image image4"></div>
+          <div class="item_image image3"></div>
           <div class="portfolio_item">
             <h3>囲碁健康体操</h3>
             <p class="item_description">
@@ -52,7 +64,7 @@
           </div>
         </li>
         <li>
-          <div class="item_image image5"></div>
+          <div class="item_image image2"></div>
           <div class="portfolio_item">
             <h3>ホラガイ<span class="artist_name">ひこまろ</span></h3>
             <p class="item_description">
@@ -63,7 +75,7 @@
           </div>
         </li>
         <li>
-          <div class="item_image image6"></div>
+          <div class="item_image image1"></div>
           <div class="portfolio_item">
             <h3>GAME<span class="artist_name">Solomon</span></h3>
             <p class="item_description">
@@ -133,7 +145,7 @@ export default {
           &:first-child{
             border-top: 1px solid #CCC;
           }
-          @for $i from 1 through 6{
+          @for $i from 1 through 7{
             color: #222;
             .image#{$i}{
               height: 200px;
@@ -224,7 +236,7 @@ export default {
           &:first-child{
             border-top: 1px solid #CCC;
           }
-          @for $i from 1 through 6{
+          @for $i from 1 through 7{
             color: #222;
             .image#{$i}{
               height: 150px;
@@ -283,7 +295,7 @@ export default {
         width: 300px;
         li{
           width: 300px;
-          @for $i from 1 through 6{
+          @for $i from 1 through 7{
             .image#{$i}{
               height: 100px;
               width: 100px;
