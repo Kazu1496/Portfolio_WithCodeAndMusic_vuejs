@@ -9,7 +9,8 @@
       <h1><span>W</span>ith <span>C</span>ode and <span>M</span>usic</h1>
       <p>
         Frontend Engineer | Guitarist | Composer<br>
-        HTML5 | CSS3 | JavaScript | jQuery | Ruby on Rails</p>
+        HTML5 | CSS3 | JavaScript | Vue.js | Ruby on Rails
+      </p>
       <ol>
         <li>
           <a href="https://www.instagram.com/kz_guitarman/" target="_blank">
@@ -74,35 +75,34 @@ export default {
       this.active = !this.active
     }
   },
+  mounted: () => {
+    const remove_bg = document.getElementsByClassName('remove_bg')[0];
+    const animation_bg = document.getElementsByClassName('first_bg_color')[0];
+    const animation_bg_2 = document.getElementsByClassName('first_bg_color_2')[0];
+    const body = document.getElementsByTagName('body')[0];
+    const loading_text = document.getElementsByClassName('loading_text')[0];
+
+    loading_text.classList.add('class', 'fadeout')
+    loading_text.addEventListener('animationend', () => {
+      remove_bg.setAttribute('style', 'display: none');
+      if (body.clientWidth > 768) {
+        animation_bg.classList.add('class', 'moving-animation-pc');
+        animation_bg.addEventListener('animationend', () => {
+          animation_bg_2.classList.add('class','moving-animation-2-pc');
+        });
+      } else {
+        animation_bg.classList.add('class', 'moving-animation-sp');
+        animation_bg.addEventListener('animationend', () => {
+          animation_bg.setAttribute('style', 'display: none');
+        });
+      }
+    });
+  },
   computed: {
     type () {
       return this.$store.getters.getType
     }
   }
-}
-window.onload = () => {
-  // ページロード完了時にアニメーション発火
-  const remove_bg = document.getElementsByClassName('remove_bg')[0];
-  const animation_bg = document.getElementsByClassName('first_bg_color')[0];
-  const animation_bg_2 = document.getElementsByClassName('first_bg_color_2')[0];
-  const body = document.getElementsByTagName('body')[0];
-  const loading_text = document.getElementsByClassName('loading_text')[0];
-
-  loading_text.classList.add('class', 'fadeout')
-  loading_text.addEventListener('animationend', () => {
-    remove_bg.setAttribute('style', 'display: none');
-    if (body.clientWidth > 768) {
-      animation_bg.classList.add('class', 'moving-animation-pc');
-      animation_bg.addEventListener('animationend', () => {
-        animation_bg_2.classList.add('class','moving-animation-2-pc');
-      });
-    } else {
-      animation_bg.classList.add('class', 'moving-animation-sp');
-      animation_bg.addEventListener('animationend', () => {
-        animation_bg.setAttribute('style', 'display: none');
-      });
-    }
-  });
 }
 </script>
 
