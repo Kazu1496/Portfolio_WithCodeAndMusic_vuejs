@@ -13,7 +13,7 @@
               ■ 曲名　World Requiem<br>
               ■ 担当　ギターソロ
             </p>
-            <a href="https://goo.gl/VgeuaG" target="_blank">SoundCloud</a>
+            <a href="https://goo.gl/VgeuaG" target="_blank" rel="noreferrer">SoundCloud</a>
           </div>
         </li>
         <li>
@@ -25,8 +25,8 @@
               ■ Tr3 ギターソロ / Mix<br>
               ■ Tr5 ギターソロ
             </p>
-            <a href="https://t.co/nvC63MX2Sn" target="_blank">Spotify</a>
-            <a href="https://whiletruejpn.tumblr.com/" target="_blank">Official Site</a>
+            <a href="https://t.co/nvC63MX2Sn" target="_blank" rel="noreferrer">Spotify</a>
+            <a href="https://whiletruejpn.tumblr.com/" target="_blank" rel="noreferrer">Official Site</a>
           </div>
         </li>
         <li>
@@ -37,7 +37,7 @@
               ■曲名　ぬけがら<br>
               ■担当　ギターアレンジ
             </p>
-            <a href="https://goo.gl/rtfnmB" target="_blank">Official Site</a>
+            <a href="https://goo.gl/rtfnmB" target="_blank" rel="noreferrer">Official Site</a>
           </div>
         </li>
         <li>
@@ -48,7 +48,7 @@
               ■曲名　Breaking!, Fusion LaBo, Slow up<br>
               ■担当　楽曲提供（作編曲）
             </p>
-            <a href="http://igo-official.net/" target="_blank">Official Site</a>
+            <a href="http://igo-official.net/" target="_blank" rel="noreferrer">Official Site</a>
           </div>
         </li>
         <li>
@@ -59,7 +59,7 @@
               ■曲名　せかい<br>
               ■担当　ギターソロ
             </p>
-            <a href="https://goo.gl/8u0jny" target="_blank">Niconico</a>
+            <a href="https://goo.gl/8u0jny" target="_blank" rel="noreferrer">Niconico</a>
           </div>
         </li>
         <li>
@@ -70,7 +70,7 @@
               ■曲名　儚-hakana-<br>
               ■担当　ギターソロ
             </p>
-            <a href="https://goo.gl/wVVeZN" target="_blank">Official Site</a>
+            <a href="https://goo.gl/wVVeZN" target="_blank" rel="noreferrer">Official Site</a>
           </div>
         </li>
       </ul>

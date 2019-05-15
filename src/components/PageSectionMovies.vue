@@ -7,7 +7,7 @@
       <!-- <input type="submit" @click="toggleType"> -->
       <div class="portfolio_container" v-if="active">
         <div class="portfolio_card">
-          <a href="https://www.youtube.com/watch?v=o-yfzNMn60o" target="_blank">
+          <a href="https://www.youtube.com/watch?v=o-yfzNMn60o" target="_blank" rel="noreferrer">
             <div class="item_image image1"></div>
             <h3>シャウトロック - Shout Rock -</h3>
             <p class="item_description">
@@ -19,7 +19,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="https://www.youtube.com/watch?v=Xo3PSmFcazY" target="_blank">
+          <a href="https://www.youtube.com/watch?v=Xo3PSmFcazY" target="_blank" rel="noreferrer">
             <div class="item_image image2"></div>
             <h3>ステイアライブ - Stay Alive -</h3>
             <p class="item_description">
@@ -31,7 +31,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="https://www.youtube.com/watch?v=ekjw3jCqzOw" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ekjw3jCqzOw" target="_blank" rel="noreferrer">
             <div class="item_image image3"></div>
             <h3>G5 Cover Project 2016 - Free for All -</h3>
             <p class="item_description">
@@ -43,7 +43,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="https://www.youtube.com/watch?v=ZHMUvE6z5A4" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ZHMUvE6z5A4" target="_blank" rel="noreferrer">
             <div class="item_image image4"></div>
             <h3>G5 Cover Project 2016 - Outburst -</h3>
             <p class="item_description">
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="more-link-area">
-        <a href="https://www.youtube.com/channel/UCxlAoJglz1U38HFu2UY3AHg" target="_blank">
+        <a href="https://www.youtube.com/channel/UCxlAoJglz1U38HFu2UY3AHg" target="_blank" rel="noreferrer">
           More
           <i class="fas fa-caret-down"></i>
         </a>

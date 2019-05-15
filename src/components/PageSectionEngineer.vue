@@ -44,7 +44,7 @@
       </div>
       <div class="portfolio_container">
         <div class="portfolio_card">
-          <a href="https://ekichika.herokuapp.com/" target="_blank">
+          <a href="https://ekichika.herokuapp.com/" target="_blank" rel="noreferrer">
             <div class="item_image image1"></div>
             <h3>エキチカ！</h3>
             <p class="item_description">
@@ -55,7 +55,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="javascript:void(0)" target="_blank">
+          <a href="javascript:void(0)" target="_blank" rel="noreferrer">
             <div class="item_image image2"></div>
             <h3>With Code and Music</h3>
             <p class="item_description">
@@ -65,7 +65,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="https://qiitadeck.com/" target="_blank">
+          <a href="https://qiitadeck.com/" target="_blank" rel="noreferrer">
             <div class="item_image image3"></div>
             <h3>QiitaDeck</h3>
             <p class="item_description">
@@ -77,7 +77,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="javascript:void(0)" target="_blank">
+          <a href="javascript:void(0)" target="_blank" rel="noreferrer">
             <div class="item_image image4"></div>
             <h3>Kurenai-works</h3>
             <p class="item_description">
@@ -89,7 +89,7 @@
           </a>
         </div>
         <div class="portfolio_card">
-          <a href="https://github.com/Kazu1496" target="_blank">
+          <a href="https://github.com/Kazu1496" target="_blank" rel="noreferrer">
             <div class="item_image image5"></div>
             <h3>More GitHub</h3>
             <p class="item_description">

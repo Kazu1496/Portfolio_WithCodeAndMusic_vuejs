@@ -2,7 +2,7 @@
   <footer>
     <ol>
       <li>
-        <a href="https://www.instagram.com/kz_guitarman/" target="_blank">
+        <a href="https://www.instagram.com/kz_guitarman/" target="_blank" rel="noreferrer">
           <i class="fab fa-instagram"></i>
         </a>
       </li>
@@ -11,6 +11,7 @@
           v-if="type === 'Engineer'"
           href="https://twitter.com/kazu_real20"
           target="_blank"
+          rel="noreferrer"
           >
           <i class="fab fa-twitter-square"></i>
         </a>
@@ -18,27 +19,28 @@
           v-else
           href="https://twitter.com/kurenai1496"
           target="_blank"
+          rel="noreferrer"
           >
           <i class="fab fa-twitter-square"></i>
         </a>
       </li>
       <li v-if="type === 'Engineer'">
-        <a href="https://www.facebook.com/profile.php?id=100013086785196" target="_blank">
+        <a href="https://www.facebook.com/profile.php?id=100013086785196" target="_blank" rel="noreferrer">
           <i class="fab fa-facebook-square"></i>
         </a>
       </li>
       <li v-if="type === 'Artist'">
-        <a href="https://www.youtube.com/channel/UCxlAoJglz1U38HFu2UY3AHg" target="_blank">
+        <a href="https://www.youtube.com/channel/UCxlAoJglz1U38HFu2UY3AHg" target="_blank" rel="noreferrer">
           <i class="fab fa-youtube"></i>
         </a>
       </li>
       <li v-if="type === 'Engineer'">
-        <a href="https://github.com/Kazu1496" target="_blank">
+        <a href="https://github.com/Kazu1496" target="_blank" rel="noreferrer">
           <i class="fab fa-github-square"></i>
         </a>
       </li>
       <li v-if="type === 'Artist'">
-        <a href="https://soundcloud.com/k-ishikura-guitar-kurenai" target="_blank">
+        <a href="https://soundcloud.com/k-ishikura-guitar-kurenai" target="_blank" rel="noreferrer">
           <i class="fab fa-soundcloud"></i>
         </a>
       </li>
